@@ -39,8 +39,8 @@ if not os.path.exists(results_folder):
 
 device = torch.device("cuda:3" if torch.cuda.is_available() else "cpu")
 
-#networks = ['resnet50','densenet121','vgg16','alexnet','squeezenet10']
-networks = ['resnet50','densenet121']
+networks = ['resnet50','densenet121','vgg16','alexnet','squeezenet10']
+#networks = ['resnet50','densenet121']
 repetitions = ['1', '2', '3', '4', '5']
 
 df_acc, df_tfr, df_tmr = get_empty_results_table(networks,repetitions)
