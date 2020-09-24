@@ -47,7 +47,7 @@ df_acc, df_tfr, df_tmr = get_empty_results_table(networks,repetitions)
  
 # these params are not fixed
 imgType = 'imgOrg'
-fine_tune = 'fc' # 'fc' for finetune only last fc layer, and 'all' for finetune all layers
+fine_tune = 'all' # 'fc' for finetune only last fc layer, and 'all' for finetune all layers
 for model in networks:
     for i in repetitions:
        
